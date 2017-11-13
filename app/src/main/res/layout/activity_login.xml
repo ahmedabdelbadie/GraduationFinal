@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#E0E0E0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnr_uname"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Patient Email :-"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Email"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr_uname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Password        :-"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_lpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"/>
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/cb_rem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember user , Password"
+        android:layout_below="@+id/lnr_pass"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr_pass"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:text="Login"
+        android:onClick="listnerlogin"
+        />
+    <TextView
+        android:id="@+id/tv_wrongup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_red_dark"
+
+        />
+
+</RelativeLayout>
+

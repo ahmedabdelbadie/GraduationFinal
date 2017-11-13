@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aboabdel_badie.graduationfinal.Start.Regp.Id">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Your Own ID"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/idcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Id"
+        />
+
+    <TextView
+        android:id="@+id/wrongid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcheck"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <Button
+        android:id="@+id/btn_checktoreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wrongid"
+        android:text="Check"
+        android:onClick="idcheck_click"
+        />
+
+</RelativeLayout>
